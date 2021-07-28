@@ -1,24 +1,147 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<html>
+<html lang="en">
 <head>
-  <title>Home</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <style>
-   
+  	body {
+    		background-color: #222;
+            font-family: Poppins;
+            }
+	button {
+  			background-color: #DEBF79; /* MWI Gold */
+  			border: none;
+  			color: white;
+  			padding: 15px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+            transition-duration: 0.4s;
+            }
+     button:hover {
+			background-color: #E2D0A6;
+			color: white;}
+     #underline {
+			float:left;
+			border-style: solid;
+			border-width:2px;
+			border-color: #DEBF79;
+			box-sizing: border-box;
+			width: 200px;
+			}
   </style>
 </head>
 <body>
-  <div style=
-       "background-color: white;
-        max-width: 400px;
-        max-height: 400px;">
-    <img src="
+  
+<div class="container px-4" style="min-width: 1400px;">
+	
+    <div style="
+    	background-color: #222;
+        padding-bottom: 60px;
+        padding-top: 60px;">
+  		<img src="https://raw.githubusercontent.com/Midwestern-Interactive/tech-challenge/master/assets/Logo.png"> 
+	</div>
+  
+  <div class="row gx-4"  style="
+  padding-bottom: 30px;">
     
+    <div class="col-lg-4"> 
+    <div class="p-3 border bg-light" style="
+    	background-color: white;
+        min-width: 400px;
+        padding-top: 16px;
+        padding-bottom: 40px;
+        padding-left: 60px;
+        padding-right: 60px;">
+        
+      <img src="https://raw.githubusercontent.com/Midwestern-Interactive/tech-challenge/master/assets/Talkie.png" 
+         style="display: block; margin-right:auto; margin-left:auto;">
+      <h2 style="color: black; font-size: 30pt;"><b>Heading 2</b></h2><br>
+      <p style="color: #777; font-size: 10pt;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+      
+      <button type="button" style="display: block; margin-right:auto; margin-left:auto;">Learn More</button></div></div>
+
+    
+    
+    <div class="col-lg-4"> 
+    <div class="p-3 border bg-light" style="
+    	background-color: white;
+        min-width: 400px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 60px;
+        padding-right: 60px;">
+        
+      <img src="https://raw.githubusercontent.com/Midwestern-Interactive/tech-challenge/master/assets/Rabbit.png" 
+         style="display: block; margin-right:auto; margin-left:auto;"><br>
+      <h2 style="color: black; font-size: 30pt;"><b>Heading 2</b></h2><br>
+      <p style="color: #777; font-size: 10pt;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+      
+      <button type="button" style="display: block; margin-right:auto; margin-left:auto;">Learn More</button></div></div>
+
+      
+    <div class="col-lg-4"> 
+    <div class="p-3 border bg-light" style="
+    	background-color: white;
+        min-width: 400px;
+        padding-top: 24px;
+        padding-bottom: 40px;
+        padding-left: 60px;
+        padding-right: 60px;">
+        
+      <img src="https://raw.githubusercontent.com/Midwestern-Interactive/tech-challenge/master/assets/Shield.png" 
+         style="display: block; margin-right:auto; margin-left:auto;">
+      <h2 style="color: black; font-size: 30pt;"><b>Heading 2</b></h2><br>
+      <p style="color: #777; font-size: 10pt;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+      
+      <button type="button" style="display: block; margin-right:auto; margin-left:auto;">Learn More</button>
+        
+      </div>
+    </div>
+      
   </div>
-  <div style="background-color:black;color:white;padding:20px;">
-    <h2>London</h2>
-    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-  </div>
+  	<div>
+		<h1 style="color: white; font-size: 36pt;">Heading One</h1>
+	</div>
+    <div id="underline"></div><br>
+    
+    <p id="demo" style="color: white;">A Paragraph. <href onclick="myFunction()" style="color: #DEBF79;">Try it</href></p>
+
+		<script>
+			
+            function sleep(duration) {
+				return new Promise(resolve => {
+				setTimeout(() => {
+				resolve()
+				}, duration * 1000)
+				})
+			}
+            
+            async function myFunction() {
+				// prints "Working..."
+				await console.log("Working . . .")
+				
+
+				// sleep for 5 seconds
+				await sleep(3)
+
+				// sorts names
+				function sortNames(
+            		const names = ['John', 'Paul', 'George', 'Ringo', 'John'];
+
+					let unique = [...new Set(names)];
+					
+                    console.log(unique));
+                }
+		</script>
+</div>
 
 </body>
 </html>
+
